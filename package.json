@@ -1,0 +1,50 @@
+{
+  "name": "handwrittendigitsclassifier",
+  "version": "1.0.0",
+  "description": "🤖📝 Handwritten Digits Classifier using TensorFlow.js & Node.js. Train, predict & recognize digits from the MNIST dataset. Dive into machine learning with this practical project! ",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmaaelTyrneaMitore/HandwrittenDigitsClassifier.git"
+  },
+  "keywords": [
+    "tensorflow",
+    "tensorflow.js",
+    "machine-learning",
+    "mnist",
+    "digit-recognition",
+    "neural-network",
+    "nodejs",
+    "classification",
+    "image-processing",
+    "logistic-regression",
+    "artificial-intelligence",
+    "data-science",
+    "javascript",
+    "mnist-dataset",
+    "deep-learning",
+    "computer-vision",
+    "tensorflow-node",
+    "handwritten-digits",
+    "npm-package",
+    "multinomial-regression",
+    "tensorflow-models",
+    "image-recognition",
+    "node-tensorflow-js",
+    "numerical-classification",
+    "js-ml-digit-recognition",
+    "js-tensorflow-digit-identifier"
+  ],
+  "author": "Shashank Singh",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/AmaaelTyrneaMitore/HandwrittenDigitsClassifier/issues"
+  },
+  "homepage": "https://github.com/AmaaelTyrneaMitore/HandwrittenDigitsClassifier#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
