@@ -46,5 +46,8 @@
   "homepage": "https://github.com/AmaaelTyrneaMitore/HandwrittenDigitsClassifier#readme",
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "mnist-data": "^1.2.6"
   }
 }
