@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "🤖📝 Handwritten Digits Classifier using TensorFlow.js & Node.js. Train, predict & recognize digits from the MNIST dataset. Dive into machine learning with this practical project! ",
   "main": "src/app.js",
+  "type": "module",
   "scripts": {
     "start": "./node_modules/nodemon/bin/nodemon.js ./src/app.js"
   },
