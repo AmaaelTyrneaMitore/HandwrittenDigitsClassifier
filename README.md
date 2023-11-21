@@ -21,6 +21,8 @@ This project aims to build a Handwritten Digits Classifier using TensorFlow.js a
 
 - `src/`: Contains main source code
 - `src/app.js`: Main entry point of the project
+- `src/models/`: Contains regressional models
+- `package.json`: Project configurations & dependencies
 
 ## Contributing
 
