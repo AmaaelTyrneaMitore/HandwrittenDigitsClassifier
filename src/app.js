@@ -1,5 +1,6 @@
 import MNISTData from 'mnist-data';
 import _ from 'lodash';
+import plot from 'node-remote-plot';
 
 import LogisticRegression from './models/logistic-regression.js';
 
@@ -8,7 +9,7 @@ const loadData = () => {
   // Retrieve MNIST test & training data for digits 0 to 9
   console.log('\n\n[+] Retrieving MNIST Data...');
   const MNISTTrainingData = MNISTData.training(0, 60000);
-  const MNISTTestData = MNISTData.testing(0, 1500);
+  const MNISTTestData = MNISTData.testing(0, 10000);
 
   // Flatten image data: convert 2D array of images to 1D array of pixel intensities
   console.log('[+] Flattening Image Data...');
@@ -46,7 +47,7 @@ console.log('[+] Initializing Logistic Regression...');
 // Initialize Logistic Regression model with preprocessed data
 const regression = new LogisticRegression(features, labels, {
   learningRate: 1,
-  iterations: 50,
+  iterations: 40,
   batchSize: 300,
 });
 
@@ -60,3 +61,12 @@ console.log('[+] Calculating Model Accuracy...');
 // Test the trained model and calculate its accuracy
 const modelAccuracy = regression.test(testFeatures, testLabels);
 console.log(`[+] Model Accuracy: ${modelAccuracy * 100}%\n\n`);
+
+// Plot cost history for visualization
+plot({
+  x: regression.costHistory.reverse(),
+  name: 'cost_history',
+  title: 'Cost History',
+  xLabel: 'No of Iterations #',
+  yLabel: 'Cost',
+});

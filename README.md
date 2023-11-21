@@ -7,12 +7,15 @@ This project aims to build a Handwritten Digits Classifier using TensorFlow.js a
 - 🔍 Train and evaluate a multinomial logistic regression model
 - 📊 Analyze model performance metrics and accuracy
 - 🧠 Experiment with different model architectures
+- 📈 Visualize the cost history of the model
 
 ## Usage
 
 1. **💻 Clone the repo**: `git clone git@github.com:AmaaelTyrneaMitore/HandwrittenDigitsClassifier.git`
 2. **⚙ Install dependencies**: `npm install`
 3. **🚀 Launch the project**: `npm start`
+4. **🧪 Launch the project with nodemon**: `npm run start:dev`
+5. **You will find the cost history visualizaiton in `cost_history.png` in the project root**
 
 ## Structure
 
